@@ -3,16 +3,14 @@ import dotenv from "dotenv"
 import authRouter from "./routes/auth.route.js"
 import runMongoDBConnection from "./db/connectToMongoDB.js"
 
-dotenv.config()
 
 const PORT = process.env.PORT || 3000
 const app = express()
 
-app.use("/api/auth", authRouter)
+dotenv.config()
 
-app.get("/", (req, res) => {
-	res.json("Hello World")
-})
+app.use(express.json())
+app.use("/api/auth", authRouter)
 
 app.listen(PORT, () => {
 	runMongoDBConnection()
