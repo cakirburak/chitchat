@@ -34,6 +34,7 @@ const Login = () => {
 						<input
 							onChange={handleChange}
 							id="username"
+							required
 							type="text"
 							placeholder="Enter username"
 							className="w-full input input-bordered h-10"
@@ -46,6 +47,7 @@ const Login = () => {
 						<input
 							onChange={handleChange}
 							id="password"
+							required
 							type="password"
 							placeholder="Enter password"
 							className="w-full input input-bordered h-10"
