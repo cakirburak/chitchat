@@ -25,7 +25,9 @@ const SignUp = () => {
 					</label>
 					<input type="password" placeholder="Confirm password" className="w-full input input-bordered h-10" />
 					<GenderCheckbox />
-					<a href="#" className="text-sm hover:underline hover:text-yellow-500 mt-2 ps-2 inline-block">Already have an account?</a>
+					<Link to="/login" className="text-sm hover:underline hover:text-yellow-500 mt-2 ps-2 inline-block">
+						Already have an account?
+					</Link>
 					<div>
 						<button className="btn btn-block btn-sm mt-2 hover:bg-yellow-500 hover:text-[#1d242a]">Sign Up</button>
 					</div>
