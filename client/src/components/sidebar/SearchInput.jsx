@@ -1,13 +1,18 @@
 import { IoSearchSharp } from "react-icons/io5";
 
-const SearchInput = () => {
+const SearchInput = ({ searchInput, setSearchInput }) => {
+
 	return (
-		<form className="flex items-center gap-2">
-			<input type="text" placeholder="Search..." className="input input-bordered rounded-full" />
-			<button type="submit" className="btn btn-circle hover:bg-yellow-500 text-white">
-				<IoSearchSharp className="w-6 h-6 outline-none" />
-			</button>
-		</form>
+		<div className="input input-bordered rounded-full flex items-center">
+			<input
+				onChange={(e) => setSearchInput(e.target.value)}
+				value={searchInput}
+				type="text"
+				placeholder="Search..."
+				className="w-full bg-[#1d242a]"
+			/>
+			<IoSearchSharp className="w-6 h-6 outline-none" />
+		</div>
 	)
 }
 
