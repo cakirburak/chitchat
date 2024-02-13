@@ -42,7 +42,7 @@ const SidebarContainer = () => {
 	return (
 		<div className="flex flex-col border-r border-slate-100 p-4">
 			<SearchInput searchInput={searchInput} setSearchInput={setSearchInput} />
-			<div className="divider px-3"></div>
+			<div className="divider px-3 my-1"></div>
 			<Conversations loading={loading} conversations={filteredConversations} emojiMap={emojiMap} />
 			<LogoutButton />
 		</div>
