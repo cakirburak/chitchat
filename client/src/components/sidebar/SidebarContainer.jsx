@@ -18,7 +18,7 @@ const SidebarContainer = () => {
 		setFilteredConversations(filtered);
 	}, [searchInput, conversations]);
 
-
+	// map emoji to its conversation
 	useEffect(() => {
 		const newEmojiMap = {};
 		conversations.forEach((conversation) => {
