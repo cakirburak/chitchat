@@ -1,33 +1,47 @@
 # ChitChat
 
-🚀 Welcome to ChitChat! This project is a real-time chat application built using React, Socket.IO, MongoDB, Node.js with Express, and JWT authentication.
+ChitChat is a real-time chat application built with Node.js, Express, MongoDB, React, and Socket.io.
+
+- [Demo](https://chitchat-f8bx.onrender.com/) (give it a time to load)
+- [System Design Document](https://woolly-society-a2b.notion.site/System-Design-Document-ChitChat-21d81cc6c0d94d0192a02e249fd7a5fa?pvs=4)
 
 ## Features
 
-📱 **Real-time Chat:** Users can send and receive messages in real-time, creating a seamless chatting experience.  
-🔒 **JWT Authentication:** Secure authentication system using JSON Web Tokens (JWT) to authenticate users and authorize access to chat rooms.  
-💾 **MongoDB Database:** Persistent storage of chat messages and user information using MongoDB.  
-🔌 **Socket.IO:** Real-time bidirectional communication between the server and clients, enabling instant message updates.  
+- **Real-time messaging:** Instantly send and receive messages with other users.
+- **User authentication:** Securely authenticate users with JWT(JSON Web Tokens).
+- **Multiple chat rooms:** Create and join different chat rooms for group conversations.
+- **User presence:** See who's online and active in each chat room.
+- **Responsive UI:** Built with React and Tailwind CSS for a modern and intuitive user experience.
 
 ## Technologies Used
 
-🔧 **React:** Frontend development is done using React, allowing for a dynamic and responsive user interface.  
-🚀 **Socket.IO:** Facilitates real-time communication between clients and server, ensuring instant message delivery.  
-📦 **MongoDB:** NoSQL database used for storing chat messages and user data, providing scalability and flexibility.  
-🔒 **Node.js & Express:** Backend server built with Node.js and Express, handling authentication, message routing, and database operations.  
-🔑 **JWT:** JSON Web Tokens are used for secure user authentication and authorization.
+- **Backend**: Node.js, Express, MongoDB, Socket.io
+- **Frontend**: React, Context API, Socket.io Client, Tailwind CSS
+- **Authentication**: JWT (JSON Web Tokens)
 
-## Usage
+## Installation
 
-To run the project locally, follow these steps:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) installed on your computer. From your command line:
 
-1. Clone this repository to your local machine.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
-4. Set up your MongoDB database and configure the connection string in the server code.
-5. Start the server with `npm run dev`.
-6. Navigate to the client directory and start the React app with `npm run dev`.
-7. Open your browser and visit the specified port to access the application.
+```bash
+# Clone this repository
+$ git clone https://github.com/cakirburak/chitchat.git
+
+# Go into the repository
+$ cd chitchat
+
+# Install dependencies
+$ npm install && npm install --prefix client
+
+# Run the app for api
+$ npm run dev
+
+# Run the app for client
+$ cd client/
+$ npm run dev
+```
+> **Note**
+> Make sure you set enviromental variables; `MONGO_DB_URI`, `JWT_SECRET`, `NODE_ENV`, `PORT`.
 
 ## Contributing
 
